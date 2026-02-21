@@ -423,20 +423,129 @@ h3 {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-content .couple-names {
-    font-size: 4rem;
+  :root {
+    --spacing-section: 60px;
+    /* Half the spacing for mobile */
   }
 
   .section-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+
+  .section-title::before {
+    font-size: 1.2rem;
+  }
+
+  .glass-card {
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+
+  /* Hero Mobile */
+  .hero-content .couple-names {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-content .subtitle {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+  }
+
+  .hero-content .wedding-date {
+    font-size: 1.2rem;
+  }
+
+  /* Couple Mobile */
+  .couple-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .heart-icon {
+    font-size: 2rem;
+    margin: 10px 0;
   }
 
   .person-img {
-    width: 200px;
-    height: 280px;
+    width: 220px;
+    height: 300px;
+    border-radius: 110px 110px 0 0;
+    border-width: 4px;
+  }
+
+  .person .name {
+    font-size: 2rem;
+  }
+
+  /* Invitation Mobile */
+  .invitation-text p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .btn-primary {
+    padding: 14px 35px;
+    font-size: 0.9rem;
+  }
+
+  /* Venue Mobile */
+  .venue-icon {
+    font-size: 2.5rem;
+  }
+
+  .venue-address {
+    font-size: 1rem;
+  }
+
+  .venue-map-preview {
+    padding: 30px 20px;
+    margin: 15px 0 25px;
+  }
+
+  .map-icon {
+    font-size: 2.5rem;
+  }
+
+  /* Gallery Mobile */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    /* Single column on mobile */
+    gap: 15px;
+  }
+
+  .gallery-item {
+    height: 300px;
+  }
+
+  /* Footer Mobile */
+  .footer-msg {
+    padding: 60px 20px;
+  }
+
+  .footer-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .footer-names {
+    font-size: 2.2rem;
+    margin-top: 30px;
   }
 
   .save-the-date {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content .couple-names {
+    font-size: 2.8rem;
+  }
+
+  .person-img {
+    width: 180px;
+    height: 250px;
   }
 }
