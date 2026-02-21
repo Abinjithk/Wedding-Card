@@ -19,6 +19,16 @@
   box-sizing: border-box;
 }
 
+/* Fallback for AOS: ensure visibility if library fails */
+[data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+html.js-enabled [data-aos] {
+  opacity: 0;
+}
+
 
 
 body {
