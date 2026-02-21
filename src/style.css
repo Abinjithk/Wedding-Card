@@ -186,26 +186,105 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .modern-royale-hero {
+    height: auto;
+    min-height: auto;
+    padding: 60px 0 20px;
+  }
+
   .hero-split-container {
     flex-direction: column;
   }
 
-  .hero-image-half {
-    flex: 1;
-    min-height: 45vh;
-  }
-
   .hero-text-half {
     flex: 1;
-    padding: 40px 20px;
-  }
-
-  .hero-editorial-content .couple-names {
-    font-size: 3.5rem;
+    padding: 20px;
+    background: transparent;
   }
 
   .hero-text-half::after {
-    font-size: 8rem;
+    display: none;
+  }
+
+  .hero-editorial-content .subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+  }
+
+  .hero-editorial-content .couple-names {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-editorial-content .ampersand {
+    font-size: 1.8rem;
+    margin: 5px 0;
+  }
+
+  .hero-divider {
+    margin-bottom: 20px;
+  }
+
+  .hero-editorial-content .wedding-date {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+
+  .section-title::before {
+    font-size: 1.2rem;
+  }
+
+  .glass-card {
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+
+  .couple-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .heart-icon {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+
+  .person-img {
+    width: 200px;
+    height: 280px;
+  }
+
+  .person .name {
+    font-size: 2rem;
+  }
+
+  .invitation-text p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .save-the-date {
+    display: none;
+  }
+
+  /* Footer Mobile */
+  .footer-msg {
+    padding: 60px 20px;
+  }
+
+  .footer-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .footer-names {
+    font-size: 2.2rem;
+    margin-top: 30px;
   }
 }
 
@@ -500,24 +579,4 @@ h3 {
   letter-spacing: 2px;
   margin-bottom: 10px;
   color: #888;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-content .couple-names {
-    font-size: 4rem;
-  }
-
-  .section-title {
-    font-size: 2.5rem;
-  }
-
-  .person-img {
-    width: 200px;
-    height: 280px;
-  }
-
-  .save-the-date {
-    display: none;
-  }
 }
